@@ -10,6 +10,20 @@ PS5 port by **Youss Riaal**.
 > original Bounce Tales `.jar` (Nokia J2ME version, v2.0.x). The game reads its
 > artwork, levels, text and music from that file.
 
+## Screenshots
+
+Captured from the port at its 1080p output.
+
+![Gameplay in 16:9 widescreen](docs/images/gameplay.png)
+
+![Story text drawn at full resolution](docs/images/story.png)
+
+![A later chapter](docs/images/world.png)
+
+![Main menu](docs/images/menu.png)
+
+![Chapter page](docs/images/chapter.png)
+
 ## Install
 
 1. Extract `BNTL00001-v<version>.zip` and copy the `BNTL00001` folder to `/data/homebrew/`
