@@ -1,0 +1,10 @@
+# Host (Linux) build used for development and self-tests.
+CXX ?= g++
+CXXFLAGS = -std=c++17 -O2 -g -fwrapv -fno-strict-aliasing -w $(shell sdl2-config --cflags)
+LIBS = $(shell sdl2-config --libs) -lm
+OBJ = build-host/game.o build-host/platform.o build-host/main.o
+build-host/bouncetales: $(OBJ)
+	$(CXX) -o $@ $(OBJ) $(LIBS)
+build-host/%.o: src/%.cpp src/jrt.hpp src/platform.hpp src/game.hpp
+	@mkdir -p build-host
+	$(CXX) $(CXXFLAGS) -c $< -o $@

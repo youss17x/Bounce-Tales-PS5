@@ -1,0 +1,7 @@
+host/
+obj/
+build-cache/
+build-host/
+BNTL00001/
+*.zip
+*.elf
