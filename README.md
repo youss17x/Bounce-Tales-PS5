@@ -14,15 +14,16 @@ PS5 port by **Youss Riaal**.
 
 1. Extract `BNTL00001-v<version>.zip` and copy the `BNTL00001` folder to `/data/homebrew/`
    (or your usual homebrew location).
-2. Copy your own Bounce Tales `.jar` into `/data/BounceTales/`.
-   Any file name ending in `.jar` works; if it is not found, rename it `game.jar`.
+2. Copy your own Bounce Tales `.jar` into `/data/BounceTales/` and name it `game.jar`
+   (create the folder over FTP if it does not exist).
 3. Activate your usual jailbreak, kstuff and ShadowMount+ setup, scan, then launch **Bounce Tales**.
 
 If the `.jar` is missing, the game shows a setup screen; copy the file over FTP and press **Cross**.
+The game also looks for `game.jar` directly in `/data/` and on a USB drive (root or `BounceTales/`).
 Saves are kept in `/data/BounceTales/`. A log is written to `/data/BounceTales/bouncetales.log`.
 
-All 240×320 Bounce Tales v2.0.x jars share the same game files and differ only in their
-languages; the port picks the first valid `.jar` it finds.
+All Bounce Tales v2.0.x jars share the same game files and differ only in their languages;
+any of them works. Tested on PS5 firmware 13.60.
 
 ## Controls
 
